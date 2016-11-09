@@ -1,0 +1,15 @@
+html, body, :global(#root) {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    padding: 10px;
+}
+
+// Hide the JQuery dialog close button
+:global(.ui-dialog-titlebar-close) {
+    display: none;
+}

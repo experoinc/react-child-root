@@ -1,0 +1,12 @@
+root = true
+
+# By default, use Linux line endings (matches our .gitattributes settings)
+# Indent with 4 spaces
+# Ensure file ends in a newline
+[*]
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+charset = utf-8
