@@ -2,12 +2,13 @@
   "name": "react-child-root",
   "version": "1.0.0",
   "description": "creates a child React root",
-  "main": "src/react-child-root.js",
+  "main": "lib/react-child-root.js",
   "scripts": {
     "start": "better-npm-run devserver",
-    "build": "better-npm-run build:dev && better-npm-run build:prod && better-npm-run build:demo",
+    "build": "better-npm-run build:dev && better-npm-run build:prod && better-npm-run build:demo && better-npm-run build:lib",
+    "buildlib": "better-npm-run build:lib",
     "demo": "better-npm-run build:demo",
-    "clean": "rimraf dist",
+    "clean": "rimraf dist && rimraf lib",
     "cleanbuild": "npm run clean && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +18,9 @@
       "env": {
         "WEBPACK_ENV": "production"
       }
+    },
+    "build:lib": {
+      "command": "babel src --out-dir lib --ignore example"
     },
     "build:demo": {
       "command": "webpack --config webpack.example.config.js",
@@ -42,10 +46,11 @@
   "author": "Brandon Wallace <brandon@experoinc.com>",
   "license": "MIT",
   "peerDependencies": {
-    "react": ">=15.0.0",
-    "react-dom": ">=15.0.0"
+    "react": ">=14.0.0",
+    "react-dom": ">=14.0.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.18.0",
     "babel-core": "^6.10.4",
     "babel-eslint": "^6.1.0",
     "babel-loader": "^6.2.4",
