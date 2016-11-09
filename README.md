@@ -102,9 +102,9 @@ Where:
 
 * `children` is the new React children to render
 
-Finally, whenever you wish to destroy the child rendering context, you do:
-
 Usually you will do this in `componentDidUpdate`.
+
+Finally, whenever you wish to destroy the child rendering context, you do:
 
 ```es6
 child.dispose();
