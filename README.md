@@ -143,11 +143,13 @@ Here's a complete example:
 +       this._child.dispose();
         this._div.remove();
     }
-}
+  }
 
-// elsewhere inside some other component's render method:
-<RenderAtBottomOfDocument>
-   <div>Hello {this.props.name}!</div>
-   <button onClick={this.props.onClose}>close me</button>
-</RenderAtBottomOfDocument>
+  // elsewhere inside some other component's render method:
+  <RenderAtBottomOfDocument>
+     <div>
+         <div>Hello {this.props.name}!</div>
+         <button onClick={this.props.onClose}>close me</button>
+     </div>
+  </RenderAtBottomOfDocument>
 ```
