@@ -1,4 +1,5 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import {findDOMNode} from 'react-dom';
 import {renderToStaticMarkup} from 'react-dom/server';
 import $ from 'jquery';
