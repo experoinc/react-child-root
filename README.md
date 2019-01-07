@@ -1,4 +1,4 @@
-* Note: this library is obsolete with the release of the [React Portals API](https://reactjs.org/docs/portals.html).  Use that API instead of this library unless you are using an old version of React which pre-dates the Portals API.
+**Note: this library is obsolete with the release of the [React Portals API](https://reactjs.org/docs/portals.html).  Use that API instead of this library unless you are using an old version of React which pre-dates the Portals API.**
 
 # react-child-root
 
